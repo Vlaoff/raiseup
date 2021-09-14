@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2018",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "Api/*": [
+        "./src/*"
+      ],
+      "Models": [
+        "./src/Repository/models"
+      ],
+      "Utils/*": [
+        "./src/utils/*"
+      ],
+      "Shared/*": [
+        "../raiseup-shared/src/*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@types/jest"
+    ]
+  },
+  "exclude": [
+    "./node_modules/*",
+    "../raiseup-shared/node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "module": "esnext",
+    "target": "es2018",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "paths": {
+      "Shared/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.tsx"]
+}
