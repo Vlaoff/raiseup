@@ -27,6 +27,13 @@ describe('donation', () => {
 
     await expect(
       saveDonation({
+        amount: 0,
+        currency: Currencies.EUR
+      })
+    ).rejects.toThrow('Amount required')
+
+    await expect(
+      saveDonation({
         amount: 100,
         // @ts-ignore
         currency: 'RUR'

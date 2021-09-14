@@ -3,7 +3,7 @@ import { Donation, DonationModel } from 'Api/Repository/Donation/Donation.Entity
 import { Currencies } from 'Shared/utils/Types'
 
 export const saveDonation = async ({ amount, currency }: DonateInput): Promise<Donation> => {
-  if (!amount || isNaN(amount) || amount < 0) {
+  if (!amount || isNaN(amount) || amount <= 0) {
     throw new Error('Amount required')
   }
 
