@@ -14,7 +14,6 @@ npm run dev
 # feel good
 ```
 
-
 ```
 # in case npm i:all is not working (you're on windows)
 

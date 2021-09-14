@@ -7,34 +7,18 @@
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
     "experimentalDecorators": true,
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom"
-    ],
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@types/*": [
-        "./src/types/*"
-      ],
-      "Shared/*": [
-        "../raiseup-shared/src/*"
-      ]
+      "@/*": ["./src/*"],
+      "@types/*": ["./src/types/*"],
+      "Shared/*": ["../raiseup-shared/src/*"]
     },
-    "types": [
-      "@types/node",
-      "@nuxt/types",
-      "@nuxtjs/axios"
-    ]
+    "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios"]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
