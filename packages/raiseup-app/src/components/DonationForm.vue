@@ -3,8 +3,6 @@
     <div class="grid grid-cols-3 gap-4 mb-10">
       <template v-for="(amount, index) in suggestions">
         <SuggestionButton
-          amount-prop="works"
-          amount="10"
           :key="index"
           :amount="amount"
           :value="value"
